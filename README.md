@@ -2,7 +2,7 @@
 This project is about extracting football data from a betting website for further football analysis.
 
 ## Overview
-On execution,this project pulls football data from a sport website,in the csv formats in the golbet.py,performs required transformation on the dataset and also loads into a Postgresql database,for further analysis and decision making.
+On execution,this project pulls football data from a sport website,in the csv formats in the golbet.py,performs required transformation on the dataset,the data is hereby staged in the E0_E1_E2_combined_data.csv in the vscode file explorer and also loads into a Postgresql database,for further analysis and decision making.
 
 ## Dependencies
 
