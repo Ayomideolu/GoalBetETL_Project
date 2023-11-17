@@ -32,3 +32,14 @@ if all(data is not None for data in [data1, data2, data3]):
     print('E0_E1_E2_combined_data written to csv successfully')
 else:
     print("Data extraction failed.")
+
+
+def transformed_data():
+    df = pd.read_csv('E0_E1_E2_combined_data.csv')
+    df.columns = df.columns.str.lower()
+    selected_columns = df.iloc[:, :7]
+    selected_columns.to_csv("E0_E1_E2_combined_data.csv", index=False)
+
+    print("Data extraction and transformation complete. Output written to E0_E1_E2_combined_data.csv")
+
+
