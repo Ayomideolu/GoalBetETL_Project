@@ -42,4 +42,8 @@ def transformed_data():
 
     print("Data extraction and transformation complete. Output written to E0_E1_E2_combined_data.csv")
 
-
+def load_to_db():
+    data = pd.read_csv("E0_E1_E2_combined_data.csv", index_col=False)
+    data.to_sql('goalbet', con=get_database_conn(), if_exists = 'replace',index = False)
+    print('Data loaded successfully to prosgres')
+      
