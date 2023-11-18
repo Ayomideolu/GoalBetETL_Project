@@ -41,7 +41,6 @@ goalbet.py
 This module handles the extraction, transformation, and loading of football data.
 
 python goalbet.py
-Add any specific instructions or details about the usage of goalbet.py.
 This module contain the extraction,transformation and loading of the football data gotten from the sport website.
 util.py
 This module contains helper functions to establish a database connection.
